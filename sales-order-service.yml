@@ -6,3 +6,10 @@ management:
     web:
       exposure:
         include: "*"
+item-service-client:
+  app-name: "item-service"
+rabbitmq:
+  exchange-name: "eventExchange"
+  queue-name: "orderServiceQueue"
+  routing-key: "customer.created"
+  
